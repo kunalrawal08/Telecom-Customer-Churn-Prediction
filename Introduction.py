@@ -1,4 +1,5 @@
 import streamlit as st
+import plotly.express as px
 
 # Set up the app layout
 st.set_page_config(
