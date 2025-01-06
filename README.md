@@ -1,8 +1,3 @@
-# Telecom-Customer-Churn-Prediction
-Here’s the **text format** of your `README.md` with **Streamlit, Python, Machine Learning, and Pandas badges in the same line**. You can copy and paste this directly into your GitHub `README.md` or a text file.
-
----
-
 # 📈 Customer Churn Prediction App 📊
 
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-FF6F00?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
