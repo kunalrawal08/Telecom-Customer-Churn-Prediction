@@ -25,7 +25,7 @@ def load_model():
 def load_csv():
     """Load the customer churn data from a CSV file."""
     try:
-        df = pd.read_csv(r"C:\\Users\\Kunal\\OneDrive\\Desktop\\Customer Churn Predictions\\data\\Telecom_customer churn.csv")
+        df = pd.read_csv(r"C:\Users\Kunal\OneDrive\Desktop\Telecom-Customer-Churn-Prediction\data\Telecom_customer churn.csv")
         return df
     except FileNotFoundError:
         st.error("CSV file 'Telecom_customer_churn.csv' not found. Please ensure it exists in the correct directory.")
