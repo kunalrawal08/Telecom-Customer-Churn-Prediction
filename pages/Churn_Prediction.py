@@ -111,7 +111,7 @@ def display_business_metrics(df):
 def customer_churn_prediction(model):
     """Display the customer churn prediction interface."""
     try:
-        st.title("📊 Telecom Customer Churn Prediction and Analytical Dashboard")
+        st.title("📊 Telecom Customer Churn Prediction")
         st.markdown(
             """
             Welcome to the **Telecom Customer Churn Prediction & Insights Dashboard**. 
