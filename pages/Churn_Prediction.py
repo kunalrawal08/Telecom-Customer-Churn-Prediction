@@ -36,7 +36,7 @@ def load_model():
 def load_csv():
 
     try:
-        df = pd.read_csv(r"C:\Users\Kunal\OneDrive\Desktop\Telecom-Customer-Churn-Prediction\data\Telecom_customer churn.csv")
+        df = pd.read_csv(r"data/Telecom_customer churn.csv")
         logger.info("CSV file loaded successfully.")
         return df
     except FileNotFoundError:
