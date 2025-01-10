@@ -47,36 +47,3 @@ def load_csv():
         st.error(f"An error occurred while loading the CSV file: {e}")
         logger.error(f"Error loading CSV file: {e}")
         return None
-
-# Function to calculate churn probability
-def calculate_churn_probability(input_data, model):
-    """Calculate the churn probability using the provided model."""
-    try:
-        return model.predict(input_data)[0]
-    except Exception as e:
-        st.error(f"An error occurred while calculating churn probability: {e}")
-        logger.error(f"Error calculating churn probability: {e}")
-        return None
-
-# Function to create a gauge visualization
-def create_gauge(churn_probability, title):
-    """Create a gauge chart to visualize churn probability."""
-    try:
-        fig = go.Figure(go.Indicator(
-            mode="gauge+number",
-            value=churn_probability * 100,
-            title={"text": title},
-            gauge={
-                "axis": {"range": [0, 100]},
-                "steps": [
-                    {"range": [0, 50], "color": "lightgreen"},
-                    {"range": [50, 100], "color": "salmon"}
-                ],
-                "threshold": {"line": {"color": "red", "width": 4}, "thickness": 0.75, "value": 50}
-            }
-        ))
-        return fig
-    except Exception as e:
-        st.error(f"An error occurred while creating the gauge chart: {e}")
-        logger.error(f"Error creating gauge chart: {e}")
-        return None
