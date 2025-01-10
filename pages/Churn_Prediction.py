@@ -16,7 +16,7 @@ COLOR_THEME = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b",
 # Load the model
 @st.cache_data
 def load_model():
-    """Load the pre-trained model from a pickle file."""
+   
     try:
         with open('voting_regressor_model.pkl', 'rb') as f:
             model = pickle.load(f)
@@ -34,9 +34,9 @@ def load_model():
 # Load the CSV file
 @st.cache_data
 def load_csv():
-    """Load the customer churn data from a CSV file."""
+
     try:
-        df = pd.read_csv(r"C:\Users\Kunal\OneDrive\Desktop\Telecom-Customer-Churn-Prediction\data\Telecom_customer churn.csv")
+        df = pd.read_csv(r"C:\Users\Kunal\OneDrive\Desktop\Customer Churn Predictions\data\Telecom_customer churn.csv")
         logger.info("CSV file loaded successfully.")
         return df
     except FileNotFoundError:
