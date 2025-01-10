@@ -7,3 +7,5 @@ plotly
 scikit-learn
 plotly-express
 streamlit-extras
+catboost
+xgboost
