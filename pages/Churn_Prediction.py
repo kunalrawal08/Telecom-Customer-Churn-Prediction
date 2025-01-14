@@ -512,15 +512,6 @@ def main():
         if model is None or df is None:
             st.stop()
 
-        # Sidebar: "Connect with Me" section at the top
-        st.sidebar.header("📩 Connect with Me")
-        st.sidebar.markdown(
-            """ 
-            - [LinkedIn](https://www.linkedin.com/in/kunaldrawal/)  
-            - [GitHub](https://github.com/kunalrawal08/Telecom-Custom-Churn-Prediction)  
-            - **Email:** kunaldrawal@gmail.com  
-            """
-        )
         # Sidebar navigation
         st.sidebar.title("Navigation")
         app_mode = st.sidebar.selectbox(
