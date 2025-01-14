@@ -521,7 +521,6 @@ def main():
             - **Email:** kunaldrawal@gmail.com  
             """
         )
-        st.sidebar.markdown("---")
         # Sidebar navigation
         st.sidebar.title("Navigation")
         app_mode = st.sidebar.selectbox(
